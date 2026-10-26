@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  
+  <title>MDM Moda Damsko-Męska | Elegancja od 1996 roku</title>
+  <meta name="description" content="MDM Moda Damsko-Męska — elegancka moda damska i męska, garnitury ślubne, kreacje balowe oraz poprawki krawieckie. Tuchola i Czersk. 30 lat tradycji." />
+  <meta property="og:title" content="MDM Moda Damsko-Męska | Elegancja od 1996 roku" />
+  <meta property="og:description" content="MDM Moda Damsko-Męska — Tuchola i Czersk. 30 lat doświadczenia." />
+
+  <!-- Tailwind CSS & Google Fonts -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      color: #111111;
+      background-color: #f7f5f0;
+      overflow-x: hidden;
+    }
+    h1, h2, h3, h4, .font-cormorant {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+    }
+    ::selection {
+      background: #b08d57;
+      color: #ffffff;
+    }
+    @keyframes heroBounce {
+      0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+      40% { transform: translateY(-8px); }
+      60% { transform: translateY(-4px); }
+    }
+    .animate-hero-bounce {
+      animation: heroBounce 2.2s infinite;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col selection:bg-[#b08d57] selection:text-white bg-[#f7f5f0]">
+
+  <!-- TOP BAR -->
+  <div class="bg-[#111111] text-white py-2 px-4 sm:px-12 text-[11px] sm:text-[12px] tracking-widest border-b border-white/5 flex items-center justify-between">
+    <div class="flex items-center gap-3 mx-auto sm:mx-0 text-center sm:text-left">
+      <span class="text-[#d4b483] font-semibold">MDM MODA DAMSKO-MĘSKA</span>
+      <span class="hidden lg:inline text-stone-400"> — Elegancja od 1996 roku</span>
+    </div>
+    <div class="hidden sm:flex items-center gap-6 text-[11px] tracking-wider">
+      <a href="tel:+48603104600" class="flex items-center gap-1.5 text-[#d4b483] hover:text-white font-medium transition-colors">
+        <span>☎ Zadzwoń: +48 603 104 600</span>
+      </a>
+      <div class="flex items-center gap-3">
+        <span class="text-stone-400">Instagram:</span>
+        <a href="https://www.instagram.com/mdmmodadamskomeskatuchola/" target="_blank" rel="noopener noreferrer" class="text-stone-300 hover:text-[#d4b483] transition-colors hover:underline">Tuchola</a>
+        <a href="https://www.instagram.com/mdmmodadamskomeska_czersk/" target="_blank" rel="noopener noreferrer" class="text-stone-300 hover:text-[#d4b483] transition-colors hover:underline">Czersk</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <header id="header" class="fixed w-full top-0 left-0 z-50 transition-all duration-300 bg-[#111111]/95 backdrop-blur-md shadow-2xl py-0 mt-8">
+    <nav class="max-w-[1400px] mx-auto px-6 sm:px-12 py-4 flex items-center justify-between">
+      <a href="#home" class="text-white font-cormorant text-2xl sm:text-3xl font-bold tracking-[3px] hover:opacity-95 transition-opacity">
+        MDM <span class="text-[#b08d57] font-normal">Moda</span>
+      </a>
+
+      <ul class="hidden lg:flex items-center gap-8">
+        <li><a href="#home" class="text-white hover:text-[#d4b483] text-[13px] font-medium tracking-[1.5px] uppercase transition-colors">Start</a></li>
+        <li><a href="#collections" class="text-white hover:text-[#d4b483] text-[13px] font-medium tracking-[1.5px] uppercase transition-colors">Kolekcje</a></li>
+        <li><a href="#occasions" class="text-white hover:text-[#d4b483] text-[13px] font-medium tracking-[1.5px] uppercase transition-colors">Okazje</a></li>
+        <li><a href="#tailoring" class="text-white hover:text-[#d4b483] text-[13px] font-medium tracking-[1.5px] uppercase transition-colors">Poprawki</a></li>
+        <li><a href="#about" class="text-white hover:text-[#d4b483] text-[13px] font-medium tracking-[1.5px] uppercase transition-colors">O nas</a></li>
+        <li><a href="#locations" class="text-white hover:text-[#d4b483] text-[13px] font-medium tracking-[1.5px] uppercase transition-colors">Salony</a></li>
+        <li><a href="#contact" class="text-white hover:text-[#d4b483] text-[13px] font-medium tracking-[1.5px] uppercase transition-colors">Kontakt</a></li>
+      </ul>
+
+      <div class="flex items-center gap-3">
+        <a href="tel:+48603104600" class="bg-[#b08d57] hover:bg-[#c29f68] text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider rounded-sm transition-colors flex items-center gap-1.5 shadow-md">
+          <span>☎ 603 104 600</span>
+        </a>
+        <button id="menuToggle" class="lg:hidden text-white text-2xl p-1 focus:outline-none cursor-pointer" onclick="toggleMenu()">☰</button>
+      </div>
+    </nav>
+
+    <!-- MOBILE MENU DRAWER -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-[#111111]/98 backdrop-blur-lg border-t border-white/10 px-6 py-6 flex flex-col items-center gap-4 text-center">
+      <a href="tel:+48603104600" class="w-full bg-[#b08d57] text-white py-3 text-xs font-semibold uppercase tracking-[2px] shadow-md">
+        ☎ Zadzwoń: 603 104 600
+      </a>
+      <a href="#home" onclick="toggleMenu()" class="text-white hover:text-[#d4b483] text-sm uppercase py-1">Start</a>
+      <a href="#collections" onclick="toggleMenu()" class="text-white hover:text-[#d4b483] text-sm uppercase py-1">Kolekcje</a>
+      <a href="#occasions" onclick="toggleMenu()" class="text-white hover:text-[#d4b483] text-sm uppercase py-1">Okazje specjalne</a>
+      <a href="#tailoring" onclick="toggleMenu()" class="text-white hover:text-[#d4b483] text-sm uppercase py-1">Poprawki krawieckie</a>
+      <a href="#about" onclick="toggleMenu()" class="text-white hover:text-[#d4b483] text-sm uppercase py-1">O nas</a>
+      <a href="#locations" onclick="toggleMenu()" class="text-white hover:text-[#d4b483] text-sm uppercase py-1">Salony</a>
+      <a href="#contact" onclick="toggleMenu()" class="text-white hover:text-[#d4b483] text-sm uppercase py-1">Kontakt</a>
+    </div>
+  </header>
+
+  <main class="flex-1 mt-20">
+    <!-- HERO SLIDER -->
+    <section id="home" class="relative min-h-screen flex items-center text-white overflow-hidden bg-[#0d0d0d]">
+      <div id="heroBg" class="absolute inset-0 bg-cover bg-center transition-all duration-1000 ease-in-out" style="background-image: url('https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=2000');"></div>
+      <div class="absolute inset-0 bg-gradient-to-r from-black/90 via-black/60 to-black/35 z-[1]"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/30 z-[1]"></div>
+
+      <div class="max-w-[1300px] w-full mx-auto px-6 sm:px-12 py-32 sm:py-40 relative z-10">
+        <div class="max-w-2xl">
+          <div class="flex items-center gap-3 mb-5">
+            <span class="text-[#d4b483] tracking-[5px] uppercase text-xs sm:text-sm font-semibold">Moda damska • Moda męska • Krawiectwo</span>
+            <span id="heroBadge" class="inline-block px-3 py-0.5 text-[10px] uppercase tracking-[2px] bg-[#b08d57]/30 border border-[#b08d57]/60 text-[#d4b483] rounded-full">Kolekcja Męska</span>
+          </div>
+
+          <h1 class="font-cormorant text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-medium leading-[0.92] mb-7 tracking-tight">
+            Elegancja,<br />która <span class="text-[#d4b483] italic">pozostaje.</span>
+          </h1>
+
+          <p class="text-stone-300 text-sm sm:text-base md:text-lg leading-relaxed mb-10 max-w-xl font-light">
+            Od 1996 roku pomagamy naszym klientom wyglądać wyjątkowo. Odkryj kolekcje na każdą uroczystość, perfekcyjne dopasowanie krawieckie oraz ponadczasową jakość w Tucholi i Czersku.
+          </p>
+
+          <div class="flex flex-wrap gap-4 mb-10">
+            <a href="#collections" class="inline-block bg-[#b08d57] hover:bg-[#d4b483] text-white px-8 py-4 text-xs font-semibold uppercase tracking-[2px] shadow-lg transition-transform hover:-translate-y-1">
+              Poznaj kolekcję
+            </a>
+            <a href="#locations" class="inline-block border border-white hover:bg-white hover:text-[#111111] text-white px-8 py-4 text-xs font-semibold uppercase tracking-[2px] transition-transform hover:-translate-y-1">
+              Odwiedź salon
+            </a>
+            <a href="tel:+48603104600" class="inline-flex items-center gap-2 bg-stone-900/90 border border-[#b08d57]/60 text-[#d4b483] hover:text-white hover:bg-[#b08d57] px-6 py-4 text-xs font-semibold uppercase tracking-[2px] transition-colors">
+              <span>☎ 603 104 600</span>
+            </a>
+          </div>
+
+          <!-- Slider Switchers -->
+          <div class="flex items-center gap-3">
+            <button onclick="setSlide(0)" id="slideBtn0" class="text-xs uppercase tracking-wider py-2 px-4 rounded-full bg-black/40 text-white border border-[#b08d57] shadow-md">Moda męska</button>
+            <button onclick="setSlide(1)" id="slideBtn1" class="text-xs uppercase tracking-wider py-2 px-4 rounded-full text-stone-400 bg-black/20 border border-white/10 hover:text-white">Moda damska</button>
+          </div>
+        </div>
+      </div>
+
+      <a href="#intro" class="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/80 hover:text-white text-[11px] uppercase tracking-[3px] font-medium animate-hero-bounce z-10">
+        ↓ Przewiń
+      </a>
+    </section>
+
+    <!-- INTRO -->
+    <section id="intro" class="py-24 sm:py-32 bg-white text-center px-6 sm:px-12">
+      <div class="max-w-3xl mx-auto">
+        <span class="text-[#b08d57] text-xs font-semibold uppercase tracking-[4px] block mb-4">MDM Moda Damsko-Męska</span>
+        <h2 class="font-cormorant text-4xl sm:text-5xl md:text-6xl font-medium text-[#111111] mb-6">Styl, który mówi więcej.</h2>
+        <p class="text-stone-600 text-base sm:text-lg leading-[1.9] font-light">
+          MDM to miejsce dla osób, które cenią jakość, elegancję i indywidualny styl. Od trzydziestu lat tworzymy przestrzeń, w której moda staje się czymś więcej niż tylko ubraniem — oferujemy pełne doradztwo wizerunkowe, stylizacje okolicznościowe oraz własną pracownię poprawek krawieckich.
+        </p>
+      </div>
+    </section>
+
+    <!-- KOLEKCJE -->
+    <section id="collections" class="py-24 sm:py-28 bg-[#f7f5f0] px-6 sm:px-12">
+      <div class="max-w-[1400px] mx-auto">
+        <div class="text-center mb-16">
+          <span class="text-[#b08d57] text-xs uppercase tracking-[4px] font-semibold block mb-3">Nasza oferta</span>
+          <h2 class="font-cormorant text-4xl sm:text-5xl md:text-6xl font-medium text-[#111111]">Odkryj nasze kolekcje</h2>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div class="group relative h-[500px] sm:h-[620px] overflow-hidden shadow-md">
+            <img src="https://images.unsplash.com/photo-1617137968427-85924c800a22?w=1200" alt="Moda Męska" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent flex items-end p-8 sm:p-12">
+              <div class="text-white space-y-3">
+                <h3 class="font-cormorant text-4xl sm:text-5xl font-medium group-hover:text-[#d4b483] transition-colors">Moda Męska</h3>
+                <p class="text-stone-300 text-sm sm:text-base font-light max-w-md">Garnitury ślubne i biznesowe, koszule, marynarki, krawaty oraz obuwie wizytowe.</p>
+                <a href="#locations" class="inline-block text-[#d4b483] group-hover:text-white text-xs font-semibold uppercase tracking-[2px] pt-2">Poznaj kolekcję męską →</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="group relative h-[500px] sm:h-[620px] overflow-hidden shadow-md">
+            <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=1200" alt="Moda Damska" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent flex items-end p-8 sm:p-12">
+              <div class="text-white space-y-3">
+                <h3 class="font-cormorant text-4xl sm:text-5xl font-medium group-hover:text-[#d4b483] transition-colors">Moda Damska</h3>
+                <p class="text-stone-300 text-sm sm:text-base font-light max-w-md">Suknie wieczorowe, kreacje koktajlowe, garsonki, płaszcze i eleganckie dodatki.</p>
+                <a href="#locations" class="inline-block text-[#d4b483] group-hover:text-white text-xs font-semibold uppercase tracking-[2px] pt-2">Poznaj kolekcję damską →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OKAZJE SPECJALNE -->
+    <section id="occasions" class="py-24 sm:py-32 bg-white px-6 sm:px-12 scroll-mt-20">
+      <div class="max-w-[1400px] mx-auto">
+        <div class="text-center mb-16">
+          <span class="text-[#b08d57] text-xs uppercase tracking-[4px] font-semibold block mb-3">Kreacje & Garnitury Okolicznościowe</span>
+          <h2 class="font-cormorant text-4xl sm:text-5xl md:text-6xl font-medium text-[#111111] mb-4">Stylizacje na wyjątkowe okazje</h2>
+          <p class="text-stone-600 text-sm sm:text-base max-w-2xl mx-auto font-light leading-relaxed">
+            Ślub, studniówka, uroczystość komunijna czy prestiżowy bankiet — w MDM dobierzemy garderobę perfekcyjnie dopasowaną do charakteru wydarzenia i Twojej sylwetki.
+          </p>
+        </div>
+
+        <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-4 mb-12" id="occasionTabs">
+          <button onclick="setOccasion(0)" id="occTab0" class="px-5 py-3 rounded-full text-xs font-semibold uppercase tracking-[1.5px] transition-all bg-[#111111] text-[#d4b483] shadow-md border border-[#b08d57]/70">💍 Śluby & Wesela</button>
+          <button onclick="setOccasion(1)" id="occTab1" class="px-5 py-3 rounded-full text-xs font-semibold uppercase tracking-[1.5px] transition-all bg-[#f7f5f0] text-stone-600 hover:text-[#111111]">🎓 Studniówki & Bale</button>
+          <button onclick="setOccasion(2)" id="occTab2" class="px-5 py-3 rounded-full text-xs font-semibold uppercase tracking-[1.5px] transition-all bg-[#f7f5f0] text-stone-600 hover:text-[#111111]">🕊️ Komunie & Chrzciny</button>
+          <button onclick="setOccasion(3)" id="occTab3" class="px-5 py-3 rounded-full text-xs font-semibold uppercase tracking-[1.5px] transition-all bg-[#f7f5f0] text-stone-600 hover:text-[#111111]">👔 Biznes & Jubileusze</button>
+        </div>
+
+        <div class="bg-[#f7f5f0] border border-stone-200/80 grid grid-cols-1 lg:grid-cols-12 overflow-hidden shadow-xl mb-12">
+          <div class="lg:col-span-6 relative min-h-[380px] sm:min-h-[480px] bg-stone-900 overflow-hidden">
+            <img id="occImg" src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=1200" alt="Okazje MDM" class="w-full h-full object-cover transition-opacity duration-300" />
+            <div class="absolute top-5 left-5 z-10">
+              <span id="occBadge" class="bg-[#111111]/90 text-[#d4b483] text-xs font-semibold uppercase tracking-[2px] px-3.5 py-1.5 border border-[#b08d57]/40 shadow-sm">Uroczystości Ślubne</span>
+            </div>
+          </div>
+
+          <div class="lg:col-span-6 p-8 sm:p-12 lg:p-14 flex flex-col justify-between">
+            <div class="space-y-6">
+              <div>
+                <span id="occSubtitle" class="text-[#b08d57] text-xs font-semibold uppercase tracking-[2.5px] block mb-1">Dla Pana Młodego, Świadka i Gości</span>
+                <h3 id="occTitle" class="font-cormorant text-3xl sm:text-4xl lg:text-5xl font-medium text-[#111111]">Śluby & Wesela</h3>
+              </div>
+              <p id="occDesc" class="text-stone-700 text-sm sm:text-base font-light leading-relaxed">
+                Kompletne stylizacje ślubne — garnitury w krojach slim i regular, kamizelki, koszule na spinki, muszki, poszetki oraz zjawiskowe suknie weselne dla pań i kreacje dla Mamy Pary Młodej.
+              </p>
+              <ul id="occHighlights" class="space-y-3 pt-2 text-xs sm:text-sm text-stone-700">
+                <li class="flex items-center gap-3">✓ Garnitury ślubne z taliowaniem i dopasowaniem na miarę</li>
+                <li class="flex items-center gap-3">✓ Eleganckie kreacje dla Mamy Pary Młodej i Świadkowej</li>
+                <li class="flex items-center gap-3">✓ Kompletna galanteria: spinki, poszetki, krawaty, muchy i paski</li>
+              </ul>
+            </div>
+
+            <div class="pt-8 mt-8 border-t border-stone-300/80 flex flex-wrap items-center justify-between gap-4">
+              <div class="space-y-0.5">
+                <span class="text-[11px] uppercase tracking-wider text-stone-500 font-medium block">Szykujesz się na to wydarzenie?</span>
+                <span class="text-xs text-stone-800 font-light">Zadzwoń i skonsultuj stylizację:</span>
+              </div>
+              <a href="tel:+48603104600" class="inline-flex items-center gap-2 bg-[#b08d57] hover:bg-[#c29f68] text-white px-5 py-3 text-xs font-semibold uppercase tracking-[1.5px] transition-all shadow-sm">
+                <span>☎ Zadzwoń: 603 104 600</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- POPRAWKI KRAWIECKIE -->
+    <section id="tailoring" class="py-24 sm:py-32 bg-[#141414] text-white px-6 sm:px-12 relative overflow-hidden scroll-mt-20">
+      <div class="max-w-[1400px] mx-auto relative z-10">
+        <div class="text-center mb-16">
+          <span class="text-[#d4b483] text-xs uppercase tracking-[4px] font-semibold block mb-3">✂ Usługi Krawieckie MDM</span>
+          <h2 class="font-cormorant text-4xl sm:text-5xl md:text-6xl font-medium text-white mb-4">Poprawki krawieckie & drobne usługi</h2>
+          <p class="text-stone-300 text-sm sm:text-base max-w-2xl mx-auto font-light leading-relaxed">
+            Dobre ubranie to ubranie idealnie leżące na sylwetce. Wykonujemy precyzyjne poprawki krawieckie naszych kolekcji, a także z przyjemnością przyjmujemy <strong>Twoje własne ubrania z szafy</strong> na drobne przeróbki!
+          </p>
+        </div>
+
+        <!-- BANER: WŁASNE UBRANIA -->
+        <div class="mb-14 p-6 sm:p-8 bg-gradient-to-r from-[#211a12] via-[#2a2217] to-[#1c1813] border border-[#b08d57]/40 shadow-xl flex flex-col md:flex-row items-center justify-between gap-6">
+          <div class="space-y-1">
+            <span class="text-[11px] uppercase tracking-[2px] font-semibold text-[#d4b483]">Usługa otwarta dla każdego</span>
+            <h3 class="font-cormorant text-2xl sm:text-3xl font-medium text-white">Możesz przynieść do nas swoje ubrania z szafy!</h3>
+            <p class="text-stone-300 text-xs sm:text-sm font-light max-w-2xl">
+              Kupiłeś spodnie w innym sklepie albo Twoje ulubione dżinsy wymagają skrócenia? Zamek w kurtce odmówił posłuszeństwa? Przynieś je do salonu MDM — zajmiemy się nimi szybko i profesjonalnie.
+            </p>
+          </div>
+          <a href="tel:+48603104600" class="shrink-0 inline-flex items-center gap-2 bg-[#b08d57] hover:bg-[#c29f68] text-white px-6 py-3.5 text-xs font-semibold uppercase tracking-[1.5px] transition-colors shadow-lg">
+            <span>☎ Zadzwoń: 603 104 600</span>
+          </a>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+          <div class="bg-[#1c1c1c] p-8 border border-white/10 hover:border-[#b08d57]/60 transition-all flex flex-col justify-between">
+            <div>
+              <div class="text-3xl mb-4">✂️</div>
+              <h3 class="font-cormorant text-2xl font-medium text-white mb-3">Poprawki do zakupionych ubrań</h3>
+              <p class="text-stone-300 text-xs sm:text-sm font-light leading-relaxed mb-6">Dopasowujemy garnitury, marynarki, spodnie i sukienki zakupione w MDM, by leżały jak szyte na miarę.</p>
+              <ul class="text-xs text-stone-300 space-y-1.5 mb-6">
+                <li>✓ Skracanie i wydłużanie nogawek</li>
+                <li>✓ Taliowanie marynarek i koszul</li>
+                <li>✓ Korekta talii i długości sukienek</li>
+              </ul>
+            </div>
+            <a href="tel:+48603104600" class="w-full inline-flex items-center justify-center gap-2 py-2 px-3 bg-white/5 hover:bg-[#b08d57] text-[#d4b483] hover:text-white text-xs font-semibold uppercase border border-white/10 transition-colors">
+              <span>☎ Zadzwoń: 603 104 600</span>
+            </a>
+          </div>
+
+          <div class="bg-[#1c1c1c] p-8 border border-white/10 hover:border-[#b08d57]/60 transition-all flex flex-col justify-between">
+            <div>
+              <div class="text-3xl mb-4">🧵</div>
+              <h3 class="font-cormorant text-2xl font-medium text-white mb-3">Przynieś własne ubrania z szafy!</h3>
+              <p class="text-stone-300 text-xs sm:text-sm font-light leading-relaxed mb-6">Wykonujemy drobne usługi krawieckie również na Twoich własnych ubraniach z domowej szafy.</p>
+              <ul class="text-xs text-stone-300 space-y-1.5 mb-6">
+                <li>✓ Skracanie dżinsów i spodni wizytowych</li>
+                <li>✓ Wymiana suwaków i zamków</li>
+                <li>✓ Zwężanie nogawek i drobne przeszycia</li>
+              </ul>
+            </div>
+            <a href="tel:+48603104600" class="w-full inline-flex items-center justify-center gap-2 py-2 px-3 bg-white/5 hover:bg-[#b08d57] text-[#d4b483] hover:text-white text-xs font-semibold uppercase border border-white/10 transition-colors">
+              <span>☎ Zadzwoń: 603 104 600</span>
+            </a>
+          </div>
+
+          <div class="bg-[#1c1c1c] p-8 border border-white/10 hover:border-[#b08d57]/60 transition-all flex flex-col justify-between">
+            <div>
+              <div class="text-3xl mb-4">📐</div>
+              <h3 class="font-cormorant text-2xl font-medium text-white mb-3">Przymiarka i doradztwo na miejscu</h3>
+              <p class="text-stone-300 text-xs sm:text-sm font-light leading-relaxed mb-6">Doświadczona obsługa dokona precyzyjnych pomiarów i doradzi optymalną linię sylwetki.</p>
+              <ul class="text-xs text-stone-300 space-y-1.5 mb-6">
+                <li>✓ Pomiary z uwzględnieniem obuwia</li>
+                <li>✓ 30 lat doświadczenia krawieckiego</li>
+                <li>✓ Sprawna i rzetelna realizacja</li>
+              </ul>
+            </div>
+            <a href="tel:+48603104600" class="w-full inline-flex items-center justify-center gap-2 py-2 px-3 bg-white/5 hover:bg-[#b08d57] text-[#d4b483] hover:text-white text-xs font-semibold uppercase border border-white/10 transition-colors">
+              <span>☎ Zadzwoń: 603 104 600</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="p-8 bg-[#181818] border border-white/10 flex flex-col sm:flex-row items-center justify-between gap-6">
+          <div>
+            <h4 class="font-cormorant text-2xl font-medium text-white">Chcesz skonsultować poprawkę lub zapytać o cenę i czas?</h4>
+            <p class="text-stone-400 text-xs sm:text-sm font-light">Nasz zespół chętnie doradzi telefonicznie lub bezpośrednio w salonach.</p>
+          </div>
+          <a href="tel:+48603104600" class="inline-flex items-center gap-2 bg-[#b08d57] hover:bg-[#c29f68] text-white px-6 py-3.5 text-xs font-semibold uppercase tracking-[1.5px] transition-colors shadow-md">
+            <span>☎ Zadzwoń: 603 104 600</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ATUTY -->
+    <section class="py-20 bg-[#111111] text-white px-6 sm:px-12 border-y border-white/10">
+      <div class="max-w-[1400px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="p-8 bg-[#161616] border border-white/5">
+          <div class="text-[#d4b483] text-2xl mb-4">✦</div>
+          <h3 class="font-cormorant text-2xl font-medium mb-2">30 lat doświadczenia</h3>
+          <p class="text-stone-400 text-xs leading-relaxed">Od 1996 roku budujemy markę opartą na zaufaniu i jakości w Tucholi i Czersku.</p>
+        </div>
+        <div class="p-8 bg-[#161616] border border-white/5">
+          <div class="text-[#d4b483] text-2xl mb-4">✂</div>
+          <h3 class="font-cormorant text-2xl font-medium mb-2">Pracownia krawiecka</h3>
+          <p class="text-stone-400 text-xs leading-relaxed">Dopasowanie garniturów oraz drobne przeróbki Twoich własnych ubrań z szafy.</p>
+        </div>
+        <div class="p-8 bg-[#161616] border border-white/5">
+          <div class="text-[#d4b483] text-2xl mb-4">♛</div>
+          <h3 class="font-cormorant text-2xl font-medium mb-2">Stylizacje okolicznościowe</h3>
+          <p class="text-stone-400 text-xs leading-relaxed">Kompleksowy dobór stylizacji na śluby, wesela, studniówki, komunie i jubileusze.</p>
+        </div>
+        <div class="p-8 bg-[#161616] border border-white/5">
+          <div class="text-[#d4b483] text-2xl mb-4">☎</div>
+          <h3 class="font-cormorant text-2xl font-medium mb-2">Kontakt: 603 104 600</h3>
+          <p class="text-stone-400 text-xs leading-relaxed">Zadzwoń i zapytaj o dostępność rozmiaru, rezerwację garnituru lub poprawki.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- O NAS -->
+    <section id="about" class="py-24 sm:py-32 bg-white px-6 sm:px-12">
+      <div class="max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div class="relative">
+          <div class="hidden sm:block absolute inset-0 translate-x-5 translate-y-5 border-2 border-[#b08d57] pointer-events-none"></div>
+          <div class="relative z-10 overflow-hidden shadow-xl">
+            <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1200" alt="Wnętrze salonu MDM Moda" class="w-full h-[450px] sm:h-[580px] object-cover" loading="lazy" />
+          </div>
+        </div>
+
+        <div class="space-y-6">
+          <span class="text-[#b08d57] text-xs uppercase tracking-[4px] font-semibold block">Nasza historia</span>
+          <h2 class="font-cormorant text-4xl sm:text-5xl md:text-6xl font-medium text-[#111111]">Elegancja od 1996 roku</h2>
+          <div class="text-stone-600 text-sm sm:text-base leading-[1.9] space-y-4 font-light">
+            <p>Od 1996 roku <strong>MDM Moda Damsko-Męska</strong> tworzy elegancję dla wymagających klientów. Przez trzy dekady zbudowaliśmy markę, która stała się synonimem jakości, prestiżu i ponadczasowego stylu.</p>
+            <p>Każdy garnitur, każda sukienka i każda koszula w naszej ofercie jest starannie wyselekcjonowana. Stawiamy na naturalne materiały, wygodę oraz fasony, które pozostają aktualne przez wiele sezonów.</p>
+          </div>
+          <div class="grid grid-cols-3 gap-6 pt-6 border-t border-stone-200">
+            <div class="border-l-2 border-[#b08d57] pl-4">
+              <div class="font-cormorant text-4xl font-semibold text-[#b08d57]">30</div>
+              <div class="text-xs uppercase text-stone-500 mt-1">Lat tradycji</div>
+            </div>
+            <div class="border-l-2 border-[#b08d57] pl-4">
+              <div class="font-cormorant text-4xl font-semibold text-[#b08d57]">50k+</div>
+              <div class="text-xs uppercase text-stone-500 mt-1">Klientów</div>
+            </div>
+            <div class="border-l-2 border-[#b08d57] pl-4">
+              <div class="font-cormorant text-4xl font-semibold text-[#b08d57]">100%</div>
+              <div class="text-xs uppercase text-stone-500 mt-1">Krawiectwa</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SALONY -->
+    <section id="locations" class="py-24 sm:py-32 bg-[#f7f5f0] px-6 sm:px-12 scroll-mt-20">
+      <div class="max-w-[1300px] mx-auto">
+        <div class="text-center mb-16">
+          <span class="text-[#b08d57] text-xs uppercase tracking-[4px] font-semibold block mb-3">Odwiedź nas</span>
+          <h2 class="font-cormorant text-4xl sm:text-5xl md:text-6xl font-medium text-[#111111] mb-4">Nasze salony</h2>
+          <p class="text-stone-600 text-sm sm:text-base max-w-xl mx-auto font-light">Zapraszamy do naszych butików w Tucholi i Czersku. Zobacz godziny otwarcia i zadzwoń przed wizytą.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Tuchola Męska -->
+          <div class="bg-white p-8 text-left shadow-sm hover:shadow-xl transition-all border border-stone-200/80 flex flex-col justify-between">
+            <div>
+              <span class="inline-block px-3 py-1 bg-stone-100 text-stone-700 text-[11px] font-medium uppercase tracking-wider rounded-full mb-3">Moda Męska & Krawiec</span>
+              <h3 class="font-cormorant text-3xl font-medium text-[#111111] mb-1">Tuchola</h3>
+              <p class="text-stone-700 text-sm font-medium mb-3">Plac Wolności 7</p>
+              <div class="mb-5">
+                <a href="tel:+48603104600" class="inline-flex items-center gap-2 text-xs font-semibold text-[#b08d57] hover:underline">
+                  <span>☎ Tel: +48 603 104 600</span>
+                </a>
+              </div>
+              <div class="border-t border-b border-stone-200/80 py-4 my-4 bg-stone-50 -mx-8 px-8 text-xs space-y-1">
+                <div class="flex justify-between"><span>Pon–Pt:</span><span class="font-semibold">9:00 – 17:00</span></div>
+                <div class="flex justify-between"><span>Sobota:</span><span class="font-semibold">9:00 – 13:00</span></div>
+                <div class="flex justify-between text-stone-400"><span>Niedziela:</span><span>Zamknięte</span></div>
+              </div>
+            </div>
+            <div class="pt-4 space-y-2">
+              <a href="tel:+48603104600" class="w-full inline-flex items-center justify-center gap-2 bg-[#b08d57] hover:bg-[#c29f68] text-white text-xs font-semibold uppercase tracking-[1.5px] py-3.5 px-4 shadow-sm transition-all">
+                <span>☎ Zadzwoń: 603 104 600</span>
+              </a>
+              <a href="https://www.google.com/maps/search/?api=1&query=MDM+Moda+M%C4%99ska+Plac+Wolno%C5%9Bci+7+Tuchola" target="_blank" class="w-full inline-flex items-center justify-center gap-2 bg-[#111111] hover:bg-stone-800 text-white px-5 py-3 text-xs font-semibold uppercase tracking-[1.5px] transition-all">
+                <span>Jak dojechać do sklepu →</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Tuchola Damska -->
+          <div class="bg-white p-8 text-left shadow-sm hover:shadow-xl transition-all border border-stone-200/80 flex flex-col justify-between">
+            <div>
+              <span class="inline-block px-3 py-1 bg-stone-100 text-stone-700 text-[11px] font-medium uppercase tracking-wider rounded-full mb-3">Moda Damska</span>
+              <h3 class="font-cormorant text-3xl font-medium text-[#111111] mb-1">Tuchola</h3>
+              <p class="text-stone-700 text-sm font-medium mb-3">Plac Wolności 17</p>
+              <div class="mb-5">
+                <a href="tel:+48603104600" class="inline-flex items-center gap-2 text-xs font-semibold text-[#b08d57] hover:underline">
+                  <span>☎ Tel: +48 603 104 600</span>
+                </a>
+              </div>
+              <div class="border-t border-b border-stone-200/80 py-4 my-4 bg-stone-50 -mx-8 px-8 text-xs space-y-1">
+                <div class="flex justify-between"><span>Pon–Pt:</span><span class="font-semibold">9:00 – 17:00</span></div>
+                <div class="flex justify-between"><span>Sobota:</span><span class="font-semibold">9:00 – 13:00</span></div>
+                <div class="flex justify-between text-stone-400"><span>Niedziela:</span><span>Zamknięte</span></div>
+              </div>
+            </div>
+            <div class="pt-4 space-y-2">
+              <a href="tel:+48603104600" class="w-full inline-flex items-center justify-center gap-2 bg-[#b08d57] hover:bg-[#c29f68] text-white text-xs font-semibold uppercase tracking-[1.5px] py-3.5 px-4 shadow-sm transition-all">
+                <span>☎ Zadzwoń: 603 104 600</span>
+              </a>
+              <a href="https://www.google.com/maps/search/?api=1&query=MDM+Moda+Damska+Plac+Wolno%C5%9Bci+17+Tuchola" target="_blank" class="w-full inline-flex items-center justify-center gap-2 bg-[#111111] hover:bg-stone-800 text-white px-5 py-3 text-xs font-semibold uppercase tracking-[1.5px] transition-all">
+                <span>Jak dojechać do sklepu →</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Czersk -->
+          <div class="bg-white p-8 text-left shadow-sm hover:shadow-xl transition-all border border-stone-200/80 flex flex-col justify-between">
+            <div>
+              <span class="inline-block px-3 py-1 bg-stone-100 text-stone-700 text-[11px] font-medium uppercase tracking-wider rounded-full mb-3">Damska, Męska & Krawiec</span>
+              <h3 class="font-cormorant text-3xl font-medium text-[#111111] mb-1">Czersk</h3>
+              <p class="text-stone-700 text-sm font-medium mb-3">ul. dr. Zielińskiego 3</p>
+              <div class="mb-5">
+                <a href="tel:+48603104600" class="inline-flex items-center gap-2 text-xs font-semibold text-[#b08d57] hover:underline">
+                  <span>☎ Tel: +48 603 104 600</span>
+                </a>
+              </div>
+              <div class="border-t border-b border-stone-200/80 py-4 my-4 bg-stone-50 -mx-8 px-8 text-xs space-y-1">
+                <div class="flex justify-between"><span>Pon–Pt:</span><span class="font-semibold">9:00 – 17:00</span></div>
+                <div class="flex justify-between"><span>Sobota:</span><span class="font-semibold">9:00 – 13:00</span></div>
+                <div class="flex justify-between text-stone-400"><span>Niedziela:</span><span>Zamknięte</span></div>
+              </div>
+            </div>
+            <div class="pt-4 space-y-2">
+              <a href="tel:+48603104600" class="w-full inline-flex items-center justify-center gap-2 bg-[#b08d57] hover:bg-[#c29f68] text-white text-xs font-semibold uppercase tracking-[1.5px] py-3.5 px-4 shadow-sm transition-all">
+                <span>☎ Zadzwoń: 603 104 600</span>
+              </a>
+              <a href="https://www.google.com/maps/search/?api=1&query=MDM+Moda+dr.+Zieli%C5%84skiego+3+Czersk" target="_blank" class="w-full inline-flex items-center justify-center gap-2 bg-[#111111] hover:bg-stone-800 text-white px-5 py-3 text-xs font-semibold uppercase tracking-[1.5px] transition-all">
+                <span>Jak dojechać do sklepu →</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERIA -->
+    <section class="py-24 bg-white px-6 sm:px-12">
+      <div class="max-w-[1400px] mx-auto text-center mb-16">
+        <span class="text-[#b08d57] text-xs uppercase tracking-[4px] font-semibold block mb-3">Inspiracje</span>
+        <h2 class="font-cormorant text-4xl sm:text-5xl font-medium">Świat MDM</h2>
+      </div>
+      <div class="max-w-[1400px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <img src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=800" alt="Garnitur" class="h-96 w-full object-cover shadow-sm hover:scale-105 transition-transform" />
+        <img src="https://images.unsplash.com/photo-1566174053879-31528523f8ae?w=800" alt="Suknia" class="h-96 w-full object-cover shadow-sm hover:scale-105 transition-transform" />
+        <img src="https://images.unsplash.com/photo-1593030761757-71fae45fa0e7?w=800" alt="Dodatki" class="h-96 w-full object-cover shadow-sm hover:scale-105 transition-transform" />
+      </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="py-24 px-6 text-center text-white bg-cover bg-center" style="background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url('https://images.unsplash.com/photo-1445205170230-053b83016050?w=1800');">
+      <div class="max-w-2xl mx-auto space-y-4">
+        <span class="text-[#d4b483] text-xs uppercase tracking-[4px] font-semibold block">MDM Newsletter</span>
+        <h2 class="font-cormorant text-4xl sm:text-5xl font-medium text-white">Bądź na bieżąco</h2>
+        <p class="text-stone-300 text-sm font-light">Zapisz się i otrzymuj informacje o nowościach i premierach kolekcji.</p>
+        <form onsubmit="event.preventDefault(); alert('Dziękujemy za zapis do newslettera MDM Moda!');" class="flex flex-col sm:flex-row max-w-md mx-auto mt-6">
+          <input type="email" placeholder="Twój adres e-mail" required class="flex-1 px-5 py-3 text-black text-sm bg-white focus:outline-none" />
+          <button type="submit" class="bg-[#b08d57] text-white px-6 py-3 text-xs font-semibold uppercase tracking-wider">Zapisz się</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- PŁYWAJĄCY PRZYCISK DZWONIENIA NA TELEFONACH -->
+  <div class="fixed bottom-6 left-6 z-40 sm:hidden">
+    <a href="tel:+48603104600" class="flex items-center gap-2 bg-[#b08d57] text-white px-4 py-3 rounded-full shadow-2xl border border-white/20 active:scale-95 transition-transform">
+      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-20"></span>
+      <span>☎ 603 104 600</span>
+    </a>
+  </div>
+
+  <!-- PRZYCISK DO GÓRY -->
+  <button onclick="window.scrollTo({top:0, behavior:'smooth'})" class="fixed bottom-6 right-6 z-40 w-12 h-12 rounded-full bg-[#111111]/90 hover:bg-[#b08d57] text-[#d4b483] hover:text-white border border-[#b08d57]/40 shadow-xl flex items-center justify-center cursor-pointer">
+    ↑
+  </button>
+
+  <!-- FOOTER -->
+  <footer id="contact" class="bg-[#0d0d0d] text-white pt-20 pb-10 px-6 sm:px-12 border-t border-white/5 scroll-mt-20">
+    <div class="max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 pb-16 border-b border-white/10 text-xs text-stone-400">
+      <div class="space-y-4">
+        <a href="#home" class="font-cormorant text-3xl font-bold tracking-[3px] text-white block">
+          MDM <span class="text-[#b08d57] font-normal">Moda</span>
+        </a>
+        <p class="leading-relaxed">Elegancja od 1996 roku. Moda damska, męska i własna pracownia poprawek krawieckich w Tucholi i Czersku.</p>
+      </div>
+
+      <div class="space-y-3">
+        <h4 class="font-cormorant text-2xl text-white">Oferta</h4>
+        <p><a href="#collections" class="hover:text-white">Moda Męska</a></p>
+        <p><a href="#collections" class="hover:text-white">Moda Damska</a></p>
+        <p><a href="#occasions" class="hover:text-white">Śluby & Wesela</a></p>
+        <p><a href="#occasions" class="hover:text-white">Studniówki & Bale</a></p>
+      </div>
+
+      <div class="space-y-3">
+        <h4 class="font-cormorant text-2xl text-white">Krawiectwo</h4>
+        <p><a href="#tailoring" class="hover:text-white">Poprawki garniturów</a></p>
+        <p><a href="#tailoring" class="hover:text-white">Ubrania z własnej szafy</a></p>
+        <p><a href="#locations" class="hover:text-white">Salony i dojazd</a></p>
+      </div>
+
+      <div class="space-y-3">
+        <h4 class="font-cormorant text-2xl text-white">Kontakt</h4>
+        <div class="p-3 bg-[#161616] border border-[#b08d57]/40 space-y-2">
+          <span class="text-[10px] uppercase text-stone-400 block">Infolinia butiku:</span>
+          <a href="tel:+48603104600" class="block w-full bg-[#b08d57] hover:bg-[#c29f68] text-white py-2 text-center text-xs font-semibold uppercase">
+            ☎ Zadzwoń: 603 104 600
+          </a>
+        </div>
+        <p>E-mail: mdmmodadamskomeska@gmail.com</p>
+      </div>
+    </div>
+    <div class="text-center pt-8 text-xs text-stone-500">
+      © 2026 MDM Moda Damsko-Męska. 30 lat tradycji i elegancji. Wszelkie prawa zastrzeżone.
+    </div>
+  </footer>
+
+  <!-- SKRYPTY INTERAKCJI -->
+  <script>
+    // Menu Mobilne
+    function toggleMenu() {
+      const menu = document.getElementById('mobileMenu');
+      menu.classList.toggle('hidden');
+    }
+
+    // Hero Slider
+    const slides = [
+      {
+        bg: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=2000',
+        badge: 'Kolekcja Męska'
+      },
+      {
+        bg: 'https://images.unsplash.com/photo-1483985988355-763728e1935b?w=2000',
+        badge: 'Kolekcja Damska'
+      }
+    ];
+
+    function setSlide(index) {
+      document.getElementById('heroBg').style.backgroundImage = `url('\${slides[index].bg}')`;
+      document.getElementById('heroBadge').innerText = slides[index].badge;
+      document.getElementById('slideBtn0').className = index === 0 
+        ? 'text-xs uppercase tracking-wider py-2 px-4 rounded-full bg-black/40 text-white border border-[#b08d57] shadow-md' 
+        : 'text-xs uppercase tracking-wider py-2 px-4 rounded-full text-stone-400 bg-black/20 border border-white/10 hover:text-white';
+      document.getElementById('slideBtn1').className = index === 1 
+        ? 'text-xs uppercase tracking-wider py-2 px-4 rounded-full bg-black/40 text-white border border-[#b08d57] shadow-md' 
+        : 'text-xs uppercase tracking-wider py-2 px-4 rounded-full text-stone-400 bg-black/20 border border-white/10 hover:text-white';
+    }
+
+    // Okazje Specjalne Tabs
+    const occasionsData = [
+      {
+        title: 'Śluby & Wesela',
+        subtitle: 'Dla Pana Młodego, Świadka i Gości',
+        badge: 'Uroczystości Ślubne',
+        desc: 'Kompletne stylizacje ślubne — garnitury w krojach slim i regular, kamizelki, koszule na spinki, muszki, poszetki oraz zjawiskowe suknie weselne dla pań i kreacje dla Mamy Pary Młodej.',
+        img: 'https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=1200',
+        highlights: [
+          'Garnitury ślubne z taliowaniem i dopasowaniem na miarę',
+          'Eleganckie kreacje dla Mamy Pary Młodej i Świadkowej',
+          'Kompletna galanteria: spinki, poszetki, krawaty, muchy i paski'
+        ]
+      },
+      {
+        title: 'Studniówki & Półmetki',
+        subtitle: 'Młoda elegancja i nowoczesny sznyt',
+        badge: 'Bale & Studniówki',
+        desc: 'Garnitury o nowoczesnym kroju slim-fit, modne kolory (granat, butelkowa zieleń, czerń, burgund) oraz olśniewające suknie balowe, w których zrobisz oszałamiające wrażenie na parkiecie.',
+        img: 'https://images.unsplash.com/photo-1520854221256-17451cc331bf?w=1200',
+        highlights: [
+          'Dopasowane fasony slim i nowoczesna kolorystyka',
+          'Suknie wieczorowe maxi i koktajlowe na studniówkową noc',
+          'Szybkie poprawki krawieckie od ręki na miejscu'
+        ]
+      },
+      {
+        title: 'Komunie & Chrzciny',
+        subtitle: 'Szykowna klasyka na uroczystości rodzinne',
+        badge: 'Spotkania Rodzinne',
+        desc: 'Jasne i pastelowe sukienki, eleganckie garnitury damskie, klasyczne marynarki i koszule męskie idealne na rodzinne ceremonie w kościele oraz uroczyste przyjęcia.',
+        img: 'https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=1200',
+        highlights: [
+          'Lekkie, oddychające tkaniny na wiosenne i letnie uroczystości',
+          'Szykowne sukienki wizytowe, garsonki i garnitury damskie',
+          'Komfort i nienaganny wygląd przez cały dzień spotkania'
+        ]
+      },
+      {
+        title: 'Biznes & Jubileusze',
+        subtitle: 'Pewność siebie i nienaganny dress code',
+        badge: 'Biznes & Bankiety',
+        desc: 'Formalne garnitury biznesowe, zestawy smart-casual, żakiety, spodnie w kant oraz wełniane płaszcze, które podkreślą Twój profesjonalizm podczas ważnych spotkań i bankietów.',
+        img: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200',
+        highlights: [
+          'Wysokogatunkowe tkaniny odporne na zagniecenia',
+          'Koszule z łatwego w prasowaniu materiału non-iron',
+          'Stylizacje na jubileusze firmowe, bankiety i gale'
+        ]
+      }
+    ];
+
+    function setOccasion(idx) {
+      const data = occasionsData[idx];
+      document.getElementById('occTitle').innerText = data.title;
+      document.getElementById('occSubtitle').innerText = data.subtitle;
+      document.getElementById('occBadge').innerText = data.badge;
+      document.getElementById('occDesc').innerText = data.desc;
+      document.getElementById('occImg').src = data.img;
+
+      let hlHtml = '';
+      data.highlights.forEach(h => {
+        hlHtml += `<li class="flex items-center gap-3">✓ \${h}</li>`;
+      });
+      document.getElementById('occHighlights').innerHTML = hlHtml;
+
+      for (let i = 0; i < 4; i++) {
+        const btn = document.getElementById('occTab' + i);
+        if (i === idx) {
+          btn.className = 'px-5 py-3 rounded-full text-xs font-semibold uppercase tracking-[1.5px] transition-all bg-[#111111] text-[#d4b483] shadow-md border border-[#b08d57]/70';
+        } else {
+          btn.className = 'px-5 py-3 rounded-full text-xs font-semibold uppercase tracking-[1.5px] transition-all bg-[#f7f5f0] text-stone-600 hover:text-[#111111]';
+        }
+      }
+    }
+  </script>
+</body>
+</html>
